@@ -1,5 +1,10 @@
 $(function(){
 
+    // preloader
+    $(window).on('load',function(){
+        $(".preloader").addClass("complete")
+    })
+
     // navbar click active
   var removecls = $('.nav-link').click(function(){
 
