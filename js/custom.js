@@ -69,6 +69,27 @@ $(function(){
           
         ]
       });
+      
+
+   // custom cursor
+   
+    var kursorx = new kursor({
+
+    type: 1,
+    color: '#e23e38',
+
+    })
+
+
+
+
+
+
+
+
+
+
+
 
 
 
