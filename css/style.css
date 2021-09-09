@@ -54,12 +54,14 @@ img{
     height: 100vh;
     background: rgb(0, 0, 0);
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     z-index: 1000000;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transform: scale(1);
   
     
     
@@ -77,22 +79,12 @@ img{
 }
 
 .complete{
-  
-   animation: animate 1s linear 1 forwards;
-}
-@keyframes animate{
-
-    50%{
-        transform: scaleX(0.5);
-        
-    }
-    
-    
-    100%{
-        transform: scale(0.5,0);
-    }
+   transform: scaleX(0);
+   opacity: 0;
+   
 
 }
+
 
 
 
