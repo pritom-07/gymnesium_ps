@@ -9,7 +9,6 @@
     --bg:#f1f1f1;
 }
 
-
 *{
     padding: 0;
     margin: 0;
@@ -658,4 +657,216 @@ img{
 
   /* =======================
     team css ends
+ ========================== */
+ #testimonial{
+     padding-bottom: 80px;
+ }
+#testimonial .testimonial-bg{
+    background: url('../images/testimonial-bg.jpg') no-repeat center / cover;
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+    margin-top: 15px;
+    
+}
+
+#testimonial .testimonial-bg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+#testimonial .testimonial-item{
+    margin-right: 30px;
+    
+}
+
+
+#testimonial .testimonial-item .card-title{
+    font-family: var(--hfont);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+    
+}
+
+#testimonial .testimonial-item .card-title-2{
+    font-family: var(--hfont);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+   
+   
+}
+
+#testimonial .testimonial-item .card-text{
+    font-family: var(--pfont);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--pcol);
+    line-height: 24px;
+    padding-bottom: 80px;
+    
+
+}
+
+#testimonial .testimonial-item ul li{
+    margin-right: 4px;
+}
+
+#testimonial .testimonial-item i{
+    color: var(--brandcol);
+}
+
+
+#testimonial .slick-dots{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    display: flex;
+    margin:0;
+    padding: 0;
+}
+
+#testimonial .slick-dots li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #ffff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#testimonial .slick-dots li.slick-active{
+    background: var(--brandcol);
+    border-color: var(--brandcol);
+}
+
+#testimonial .slick-dots li:nth-child(2){
+    margin: 0px 10px;
+}
+
+#testimonial .slick-dots li button{
+    font-size: 0;
+    border: none;
+    outline: none;
+}
+   
+
+
+
+
+   /* =======================
+    testimonial css ends
+ ========================== */
+ #membership{
+     padding-bottom:80px ;
+ }
+ #membership .membership-item{
+     margin-top: 15px;
+ }
+#membership .membership-item h4{
+    background: var(--teambg);
+    line-height: 55px;
+    font-family: var(--hfont);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--hcol);
+    transition: all ease-in-out 0.4s;
+}
+
+#membership .membership-item:hover h4{
+    background: var(--brandcol);
+    color: #fff;
+}
+
+
+
+#membership .membership-item .membership-plan{
+    position: relative;
+    z-index: 1;
+}
+#membership .membership-item .plan-1{
+    background: url('../images/membership-img1.jpg')no-repeat center / cover;
+} 
+#membership .membership-item .plan-2{
+    background: url('../images/membership-img2.jpg')no-repeat center / cover;
+} 
+#membership .membership-item .plan-3{
+    background: url('../images/membership-img3.jpg')no-repeat center / cover;
+} 
+
+#membership .membership-item .membership-plan::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+
+}
+
+#membership .membership-item .membership-plan p{
+    line-height: 120px;
+    font-family: var(--hfont);
+    font-weight: 500;
+    font-size: 29px;
+
+}
+
+#membership .membership-item .membership-plan p span{
+    font-size: 50px;
+}
+
+#membership .membership-item .membership-features{
+    background: var(--bg) ;
+}
+
+#membership .membership-item .membership-features ul{
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+#membership .membership-item .membership-features ul li{
+    font-family: var(--pfont);
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--title);
+   
+}
+
+#membership .membership-item .membership-features ul li:last-child{
+    margin-bottom: 0;
+}
+
+#membership .membership-item .membership-footer a{
+    background: var(--teambg);
+    display: block;
+    font-family: var(--hfont);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--hcol);
+    line-height: 35px;
+    transition: all ease-in-out 0.4s;
+
+}
+
+#membership .membership-item:hover .membership-footer a{
+    background: var(--brandcol);
+    color: #fff;
+}
+
+
+    /* =======================
+    membership css ends
  ========================== */
