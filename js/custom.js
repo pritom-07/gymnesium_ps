@@ -26,6 +26,7 @@ $(function(){
     $('.venobox').venobox({
         closeBackground:'#e23e38',
         spinner:'wave',
+        
     }); 
 
     // team slider 
@@ -128,6 +129,92 @@ $(function(){
       ]
     });
 
+
+    // counter in funfact
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1000,
+  });
+
+
+  // brand slider
+  $('.brand-slider').slick({
+    slidesToShow:5,
+    slidesToScroll:1,
+    prevArrow:'<i class="slick-prev fas fa-chevron-left common-arr left-arrow"></i>',
+    nextArrow:'<i class="slick-prev fas fa-chevron-right common-arr right-arrow"></i>',
+    centerMode:true,
+    centerPadding:'0px',
+    autoplay:true,
+    autoplaySpeed:2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          autoplay:true,
+          autoplaySpeed:2000,
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          autoplay:true,
+          autoplaySpeed:2000,
+          slidesToShow: 1
+        }
+      }
+    ]
+
+  });
+
+// back to top button
+ 
+  $(window).scroll(function(){
+
+    var scroll =$(window).scrollTop();
+    
+    if(scroll > 50){
+      $(".back-to").addClass("back-to-top");
+      $("nav").addClass("nav-fixed");
+      $(".navbar-brand").removeClass("logo-fixed");
+    }
+
+    else{
+      $(".back-to").removeClass("back-to-top");
+      $("nav").removeClass("nav-fixed");
+      $(".navbar-brand").addClass("logo-fixed");
+
+    }
+
+
+    // nav active
+    var remove = $('.nav-link');
+    if(scroll < 20){
+      $(remove).removeClass("active");
+      $(".home").addClass("active");
+      
+    }
+
+
+  });
+
+  $(".back-to").click(function(){
+    $("html,body").animate({
+      scrollTop:0,
+    });
+    
+
+
+  });
+
+  
 
 
 

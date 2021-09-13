@@ -9,11 +9,12 @@
     <title>Gymnasium psd to html</title>
     <!-- favicon -->
     <link rel="icon" href="images/favicon2.png">
-     <!-- font awesome cdn -->
+     <!-- font awesome css -->
      <link rel="stylesheet" href="css/all.min.css">
+     <!-- flat icon css -->
+     <link rel="stylesheet" href="css/flaticon.css">
     <!-- google font css link -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-   
     <!-- bootstrap css link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
      <!-- slick slider css link -->
@@ -33,8 +34,9 @@
    
     <div class="col-lg-6 text-center ">
       <header class="heading text-uppercase">
-       <h2>gymnesium loading please wait....</h2>
-       <img src="images/preloader.gif" alt="preloader">
+        <img src="images/logo.png" alt="logo">
+       <h2>loading....</h2>
+
      </header>
     </div>
   
@@ -47,7 +49,7 @@
 <!-- navbar starts -->
 <nav class="navbar navbar-expand-lg navbar-light py-0">
     <div class="container">
-      <a class="navbar-brand py-0 position-absolute" href="#">
+      <a class="navbar-brand logo-fixed py-0 position-absolute " href="#">
           <img src="images/logo.png" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,22 +58,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item ">
-            <a class="nav-link active text-uppercase text-white" aria-current="page" href="#">Home</a>
+            <a class="nav-link home active text-uppercase text-white" aria-current="page" href="#banner">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase text-white" href="#">about us</a>
+            <a class="nav-link text-uppercase text-white" href="#about">about us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase text-white" href="#">plans</a>
+            <a class="nav-link text-uppercase text-white" href="#membership">plans</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase text-white" href="#">team</a>
+            <a class="nav-link text-uppercase text-white" href="#team">team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase text-white" href="#">gallery</a>
+            <a class="nav-link text-uppercase text-white" href="#gallery">gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase text-white" href="#">testimonials</a>
+            <a class="nav-link text-uppercase text-white" href="#testimonial">testimonials</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-uppercase text-white" href="#">contact</a>
@@ -191,7 +193,7 @@
       </div>
     </div>
   </div>
-  <div class="gallery-bg">
+  <div class="gallery-bg" data-parallax="scroll" data-image-src="images/gallery-bg.jpg">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -421,7 +423,7 @@
       </div>
     </div>
   </div>
-  <div class="testimonial-bg">
+  <div class="testimonial-bg" data-parallax="scroll" data-image-src="images/testimonial-bg.jpg">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -618,6 +620,508 @@
 <!-- membership ends -->
 
 
+<!-- counter starts -->
+<section id="funfact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1">
+        <div class="counter-item text-white text-center">
+          <h3 class="counter mb-0">235</h3>
+          <p class="mb-0 text-capitalize">cup of tea</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="counter-item  text-center text-white">
+          <h3 class="counter mb-0">518</h3>
+          <p class="mb-0 text-capitalize">award win</p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="counter-item  text-center text-white">
+          <h3 class="counter mb-0">1500</h3>
+          <p class="mb-0 text-capitalize">happy clients</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="counter-item  text-center text-white">
+          <h3 class="counter mb-0">589</h3>
+          <p class="mb-0 text-capitalize">course complete</p>
+        </div>
+      </div>
+      <div class="col-lg-1">
+        <div class="counter-item text-white text-center">
+          <h3 class="counter mb-0">209</h3>
+          <p class="mb-0 text-capitalize">partner gym</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- counter ends -->
+
+
+<!-- routine starts -->
+<section id="routine">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 m-auto">
+        <header class="heading text-center">
+          <h3 class="text-uppercase">our classes</h3>
+          <img src="images/gallery-border.png" alt="gallery-border">
+        </header>
+      </div>
+    </div>
+
+    <div class="row">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="monday-tab" data-bs-toggle="tab" data-bs-target="#monday" type="button" role="tab" aria-controls="monday" aria-selected="true">monday</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tuesday-tab" data-bs-toggle="tab" data-bs-target="#tuesday" type="button" role="tab" aria-controls="tuesday" aria-selected="false">tuesday</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="wednesday-tab" data-bs-toggle="tab" data-bs-target="#wednesday" type="button" role="tab" aria-controls="wednesday" aria-selected="false">wednesday</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="thursday-tab" data-bs-toggle="tab" data-bs-target="#thursday" type="button" role="tab" aria-controls="thursday" aria-selected="false">thursday</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="friday-tab" data-bs-toggle="tab" data-bs-target="#friday" type="button" role="tab" aria-controls="friday" aria-selected="false">friday</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="saturday-tab" data-bs-toggle="tab" data-bs-target="#saturday" type="button" role="tab" aria-controls="saturday" aria-selected="false">saturday</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
+          <ul class="ps-0">
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">yoga</p>
+              <i class="flaticon-buddhist-yoga-pose"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+
+            </li>
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">skipping</p>
+              <i class="flaticon-man-jumping-rope"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">cycling</p>
+              <i class="flaticon-exercise-1"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+
+            </li>
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">boxing</p>
+              <i class="flaticon-man-boxing"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+
+            </li>
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">back relief</p>
+              <i class="flaticon-man-doing-yoga"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+
+            </li>
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">chin up</p>
+              <i class="flaticon-pull-up"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+
+            </li>
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">weight lifting</p>
+              <i class="flaticon-weightlifting"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">weight losing</p>
+              <i class="flaticon-yoga"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+
+            </li>
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">free hand</p>
+              <i class="flaticon-man-doing-yoga-1"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">dumbell</p>
+              <i class="flaticon-exercise"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab"> 
+          <ul class="ps-0">
+          <li class="text-center">
+            <p class="mb-0 text-capitalize">yoga</p>
+            <i class="flaticon-buddhist-yoga-pose"></i>
+            <p class="mb-0">9.00 am - 11.00 am</p>
+
+          </li>
+          <li class="text-center">
+            <p class="mb-0 text-capitalize">skipping</p>
+            <i class="flaticon-man-jumping-rope"></i>
+            <p class="mb-0">9.00 am - 11.00 am</p>
+
+          </li>
+          <li class="text-center">
+            <p class="mb-0 text-capitalize">cycling</p>
+            <i class="flaticon-exercise-1"></i>
+            <p class="mb-0">9.00 am - 11.00 am</p>
+
+          </li>
+          <li class="text-center  active">
+            <p class="mb-0 text-capitalize">boxing</p>
+            <i class="flaticon-man-boxing"></i>
+            <p class="mb-0">9.00 am - 11.00 am</p>
+
+          </li>
+          <li class="text-center active">
+            <p class="mb-0 text-capitalize">back relief</p>
+            <i class="flaticon-man-doing-yoga"></i>
+            <p class="mb-0">9.00 am - 11.00 am</p>
+
+          </li>
+          <li class="text-center">
+            <p class="mb-0 text-capitalize">chin up</p>
+            <i class="flaticon-pull-up"></i>
+            <p class="mb-0">9.00 am - 11.00 am</p>
+
+          </li>
+          <li class="text-center">
+            <p class="mb-0 text-capitalize">weight lifting</p>
+            <i class="flaticon-weightlifting"></i>
+            <p class="mb-0">9.00 am - 11.00 am</p>
+
+          </li>
+          <li class="text-center">
+            <p class="mb-0 text-capitalize">weight losing</p>
+            <i class="flaticon-yoga"></i>
+            <p class="mb-0">9.00 am - 11.00 am</p>
+
+          </li>
+          <li class="text-center  active">
+            <p class="mb-0 text-capitalize">free hand</p>
+            <i class="flaticon-man-doing-yoga-1"></i>
+            <p class="mb-0">9.00 am - 11.00 am</p>
+
+          </li>
+          <li class="text-center ">
+            <p class="mb-0 text-capitalize">dumbell</p>
+            <i class="flaticon-exercise"></i>
+            <p class="mb-0">9.00 am - 11.00 am</p>
+
+          </li>
+        </ul>
+      </div>
+        <div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="wednesday-tab">
+          <ul class="ps-0">
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">yoga</p>
+              <i class="flaticon-buddhist-yoga-pose"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">skipping</p>
+              <i class="flaticon-man-jumping-rope"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">cycling</p>
+              <i class="flaticon-exercise-1"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center  ">
+              <p class="mb-0 text-capitalize">boxing</p>
+              <i class="flaticon-man-boxing"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">back relief</p>
+              <i class="flaticon-man-doing-yoga"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">chin up</p>
+              <i class="flaticon-pull-up"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">weight lifting</p>
+              <i class="flaticon-weightlifting"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">weight losing</p>
+              <i class="flaticon-yoga"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center  ">
+              <p class="mb-0 text-capitalize">free hand</p>
+              <i class="flaticon-man-doing-yoga-1"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">dumbell</p>
+              <i class="flaticon-exercise"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="thursday" role="tabpanel" aria-labelledby="thursday-tab">
+          <ul class="ps-0">
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">yoga</p>
+              <i class="flaticon-buddhist-yoga-pose"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">skipping</p>
+              <i class="flaticon-man-jumping-rope"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">cycling</p>
+              <i class="flaticon-exercise-1"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center  ">
+              <p class="mb-0 text-capitalize">boxing</p>
+              <i class="flaticon-man-boxing"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">back relief</p>
+              <i class="flaticon-man-doing-yoga"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">chin up</p>
+              <i class="flaticon-pull-up"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">weight lifting</p>
+              <i class="flaticon-weightlifting"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">weight losing</p>
+              <i class="flaticon-yoga"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center active ">
+              <p class="mb-0 text-capitalize">free hand</p>
+              <i class="flaticon-man-doing-yoga-1"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">dumbell</p>
+              <i class="flaticon-exercise"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="friday" role="tabpanel" aria-labelledby="friday-tab">
+          <ul class="ps-0">
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">yoga</p>
+              <i class="flaticon-buddhist-yoga-pose"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">skipping</p>
+              <i class="flaticon-man-jumping-rope"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center">
+              <p class="mb-0 text-capitalize">cycling</p>
+              <i class="flaticon-exercise-1"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center  ">
+              <p class="mb-0 text-capitalize">boxing</p>
+              <i class="flaticon-man-boxing"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">back relief</p>
+              <i class="flaticon-man-doing-yoga"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">chin up</p>
+              <i class="flaticon-pull-up"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">weight lifting</p>
+              <i class="flaticon-weightlifting"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">weight losing</p>
+              <i class="flaticon-yoga"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center  ">
+              <p class="mb-0 text-capitalize">free hand</p>
+              <i class="flaticon-man-doing-yoga-1"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">dumbell</p>
+              <i class="flaticon-exercise"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="saturday" role="tabpanel" aria-labelledby="saturday-tab">
+          <ul class="ps-0">
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">yoga</p>
+              <i class="flaticon-buddhist-yoga-pose"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">skipping</p>
+              <i class="flaticon-man-jumping-rope"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">cycling</p>
+              <i class="flaticon-exercise-1"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center  ">
+              <p class="mb-0 text-capitalize">boxing</p>
+              <i class="flaticon-man-boxing"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center active">
+              <p class="mb-0 text-capitalize">back relief</p>
+              <i class="flaticon-man-doing-yoga"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">chin up</p>
+              <i class="flaticon-pull-up"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">weight lifting</p>
+              <i class="flaticon-weightlifting"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">weight losing</p>
+              <i class="flaticon-yoga"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center active ">
+              <p class="mb-0 text-capitalize">free hand</p>
+              <i class="flaticon-man-doing-yoga-1"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+            <li class="text-center ">
+              <p class="mb-0 text-capitalize">dumbell</p>
+              <i class="flaticon-exercise"></i>
+              <p class="mb-0">9.00 am - 11.00 am</p>
+  
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- routine ends -->
+
+
+<!-- brand starts -->
+<section id="brand">
+  <div class="container p-0">
+    <div class="row">
+      <div class="col-lg-12 p-0">
+        <div class="brand-slider">
+          <div class="brand-item brand1">
+            <img src="images/brand1.jpg" alt="brand1">
+          </div>
+          <div class="brand-item brand1">
+            <img src="images/brand2.jpg" alt="brand2">
+          </div>
+          <div class="brand-item brand1">
+            <img src="images/brand3.jpg" alt="brand3">
+          </div>
+          <div class="brand-item brand1">
+            <img src="images/brand4.jpg" alt="brand4">
+          </div>
+          <div class="brand-item brand1">
+            <img src="images/brand5.jpg" alt="brand5">
+          </div>
+          <div class="brand-item brand1">
+            <img src="images/brand5.jpg" alt="brand5">
+          </div>
+          
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- brand ends -->
 
 
 
@@ -643,6 +1147,9 @@
 
 
 
+<div class="back-to">
+  <i class="fas fa-arrow-up"></i>
+</div>
 
 
 
@@ -656,6 +1163,13 @@
 <script src="js/venobox.min.js"></script>
 <!-- custom cursor -->
 <script src="js/kursor.min.js"></script>
+<!-- waypoint js -->
+<script src="js/waypoints.min.js"></script>
+<!-- counter js -->
+<script src="js/jquery.counterup.min.js"></script>
+<!-- paralax js -->
+<script src="js/parallax.min.js"></script>
+
 <!-- common js link -->
 <script src="js/custom.js"></script>
 
