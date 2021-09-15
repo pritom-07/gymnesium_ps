@@ -183,13 +183,13 @@ $(function(){
     if(scroll > 50){
       $(".back-to").addClass("back-to-top");
       $("nav").addClass("nav-fixed");
-      $(".navbar-brand").removeClass("logo-fixed");
+      $(".navbar-brand").removeClass("logo-padding");
     }
 
     else{
       $(".back-to").removeClass("back-to-top");
       $("nav").removeClass("nav-fixed");
-      $(".navbar-brand").addClass("logo-fixed");
+      $(".navbar-brand").addClass("logo-padding");
 
     }
 

@@ -108,9 +108,17 @@ img{
     top: 0px !important;
     position: fixed;
     background:var(--hcol);
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
  }
+
+ .navbar .navbar-toggler{
+     background: var(--brandcol);
+     
+ }
+
 
 
  .navbar .navbar-brand{
@@ -119,8 +127,9 @@ img{
      transition: all ease-in-out 0.4s;
  }
 
- .logo-fixed{
+ .logo-padding{
     padding: 10px 20px !important;
+    
  }
 
 
