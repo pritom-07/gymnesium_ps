@@ -70,7 +70,7 @@ img{
     align-items: center;
     transform: scale(1,1);
     transition: 1s;
-    background:url('../images/preloader.gif') #000 no-repeat center;
+   background: #000;
   
     
     
