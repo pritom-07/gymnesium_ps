@@ -520,7 +520,7 @@ img{
      margin-bottom: 15px;
  }
 #gallery .gallery-bg{
-    /* background: url('../images/gallery-bg.jpg') no-repeat center / cover; */
+    background: url('../images/gallery-bg.jpg') no-repeat center / cover;
     position: relative;
     z-index: 1;
 }
@@ -694,7 +694,7 @@ img{
      padding-bottom: 80px;
  }
 #testimonial .testimonial-bg{
-    /* background: url('../images/testimonial-bg.jpg') no-repeat center / cover; */
+    background: url('../images/testimonial-bg.jpg') no-repeat center / cover;
     padding-top: 30px;
     position: relative;
     z-index: 1;

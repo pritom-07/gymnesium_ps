@@ -13,6 +13,49 @@ $(function(){
     });
 
 
+// back to top button
+ 
+$(window).scroll(function(){
+
+  var scroll =$(window).scrollTop();
+  
+  if(scroll > 50){
+    $(".back-to").addClass("back-to-top");
+    $("nav").addClass("nav-fixed");
+    $(".navbar-brand").removeClass("logo-padding");
+  }
+
+  else{
+    $(".back-to").removeClass("back-to-top");
+    $("nav").removeClass("nav-fixed");
+    $(".navbar-brand").addClass("logo-padding");
+
+  }
+
+
+  // nav active
+  var remove = $('.nav-link');
+  if(scroll < 20){
+    $(remove).removeClass("active");
+    $(".home").addClass("active");
+    
+  }
+
+
+});
+
+$(".back-to").click(function(){
+  $("html,body").animate({
+    scrollTop:0,
+  });
+  
+
+
+});
+
+
+
+
     // banner slider 
     $('.banner-slider').slick({
         arrows:false,
@@ -173,48 +216,6 @@ $(function(){
     ]
 
   });
-
-// back to top button
- 
-  $(window).scroll(function(){
-
-    var scroll =$(window).scrollTop();
-    
-    if(scroll > 50){
-      $(".back-to").addClass("back-to-top");
-      $("nav").addClass("nav-fixed");
-      $(".navbar-brand").removeClass("logo-padding");
-    }
-
-    else{
-      $(".back-to").removeClass("back-to-top");
-      $("nav").removeClass("nav-fixed");
-      $(".navbar-brand").addClass("logo-padding");
-
-    }
-
-
-    // nav active
-    var remove = $('.nav-link');
-    if(scroll < 20){
-      $(remove).removeClass("active");
-      $(".home").addClass("active");
-      
-    }
-
-
-  });
-
-  $(".back-to").click(function(){
-    $("html,body").animate({
-      scrollTop:0,
-    });
-    
-
-
-  });
-
-  
 
 
 
