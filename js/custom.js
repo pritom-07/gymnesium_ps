@@ -83,7 +83,7 @@ $(".back-to").click(function(){
         slidesToScroll: 4,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 992,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -94,7 +94,7 @@ $(".back-to").click(function(){
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -102,15 +102,7 @@ $(".back-to").click(function(){
               
             }
           },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              autoplay:true,
-              
-            }
-          }
+          
           
         ]
       });
@@ -137,19 +129,20 @@ $(".back-to").click(function(){
       slidesToShow: 2,
       slidesToScroll: 1,
       responsive: [
+
         {
-          breakpoint: 1024,
+          breakpoint: 992,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
-            infinite: false,
+            infinite: true,
             dots: true,
             arrows:false,
             autoplay:true,
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -158,16 +151,7 @@ $(".back-to").click(function(){
             
           }
         },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay:true,
-            dots: true,
-            
-          }
-        }
+        
         
       ]
     });
@@ -192,25 +176,27 @@ $(".back-to").click(function(){
     autoplaySpeed:2000,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 992,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
           centerPadding: '0px',
           autoplay:true,
           autoplaySpeed:2000,
-          slidesToShow: 3
+          slidesToShow: 3,
+          slidesToScroll:1,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
           centerPadding: '0px',
           autoplay:true,
           autoplaySpeed:2000,
-          slidesToShow: 1
+          slidesToShow: 3,
+          slidesToScroll:1,
         }
       }
     ]

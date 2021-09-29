@@ -1244,78 +1244,19 @@ footer .footer-text p a{
     color: var(--brandcol);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
  /* =======================
     footer  css ends
  ========================== */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* =======================
+    back to top  css starts
+ ========================== */
 
  .back-to{
     position: fixed;
     bottom: 100%;
-    right:2%;
+    right:3%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -1326,7 +1267,7 @@ footer .footer-text p a{
 .back-to-top{
     position: fixed;
     bottom: 5%;
-    right:2%;
+    right:3%;
     width: 50px;
     height: 50px;
     background: rgba(0, 0, 0, 0.8);
