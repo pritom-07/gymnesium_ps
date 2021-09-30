@@ -1,0 +1,403 @@
+/* <<<---=================== 
+      extra small devices
+  =====================--->>> */
+
+
+  @media (max-width:575.98px) {
+
+/* === navbar css starts === */
+    .navbar .navbar-brand{
+        padding: 0 !important;
+        transform: skew(0deg);
+        -webkit-transform: skew(0deg);
+        -moz-transform: skew(0deg);
+        -ms-transform: skew(0deg);
+        -o-transform: skew(0deg);
+        position: static !important;
+}
+
+.navbar .navbar-brand img{
+    transform: skew(0deg);
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -ms-transform: skew(0deg);
+    -o-transform: skew(0deg);
+}
+
+.navbar .navbar-toggler{
+    background: #e23e32;
+ 
+    
+  
+}
+
+.navbar .navbar-toggler span{
+    color: #fff;
+}
+
+.navbar .navbar-nav{
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.navbar .navbar-nav .nav-link{
+    text-align: center;
+    color: #353535 !important;
+}
+
+
+/* === navbar css ends === */
+
+
+/* === banner css starts === */
+#banner .banner-item h4::before,
+#banner .banner-item h4::after,
+#banner .banner-item h1::before,
+#banner .banner-item h1::after,
+#banner .banner-item p::before,
+#banner .banner-item p::after
+{
+    display: none;
+}
+
+#banner .banner-item {
+	padding: 220px 0px 100px;
+}
+
+#banner .banner-item h4{
+    font-size: 24px;
+}
+
+#banner .banner-item h1{
+    font-size: 48px;
+}
+
+/* === banner css ends === */
+
+
+/* === about css starts === */
+#about {
+	padding-top: 50px;
+    padding-bottom: 50px;
+	
+}
+
+#about .about-text p{
+    padding: 5px 0px;
+    text-align: justify ;
+}
+
+
+/* === about css ends === */
+
+
+/* === gallery css starts === */
+#gallery{
+    padding-bottom:50px ;
+}
+
+#gallery .gallery-bg{
+    padding-top: 30px;
+}
+
+#gallery .gallery-bg .gallery-item {
+	margin-top: 0px;
+	
+}
+/* === gallery css ends === */
+
+
+/* === team css ends === */
+#team{
+    padding-bottom: 40px;
+}
+
+#team .team-item{
+    margin-right:0;
+    margin-top: 50px;
+
+}
+/* === team css ends === */
+
+
+/* === team css ends === */
+#funfact .counter-item{
+    text-align: center !important;
+
+}
+/* === team css ends === */
+
+
+/* === routine css starts === */
+#routine .nav-tabs .nav-item {
+    width: 50%;
+    margin-bottom: 5px;
+    transform:scale(0.95) ;
+    -webkit-transform:scale(0.95) ;
+    -moz-transform:scale(0.95) ;
+    -ms-transform:scale(0.95) ;
+    -o-transform:scale(0.95) ;
+}
+
+#routine .nav-tabs .nav-item .nav-link{
+    line-height: 30px;
+}
+
+#routine .tab-content ul li{
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* === routine css ends === */
+
+
+  }
+
+/* <<<---=================== 
+      extra small devices
+  =====================--->>> */
+
+
+
+  /* <<<---=================== 
+       small devices
+  =====================--->>> */
+  @media (min-width:576px) and (max-width:767.98px) {
+        
+/* === navbar css starts === */
+.navbar{
+    background: rgba(226, 62, 50, 0.8);
+}
+
+
+.navbar .navbar-brand{
+        padding: 0px 5px !important;
+        position: static !important;
+}
+
+
+.navbar .navbar-toggler{
+    background: #ffffff;
+ 
+}
+
+.navbar .navbar-toggler span{
+    color:#353535;
+}
+
+.navbar .navbar-nav{
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.navbar .navbar-nav .nav-link{
+    text-align: center;
+    color: #353535 !important;
+}
+
+
+/* === navbar css ends === */
+
+/* === banner css starts === */
+#banner .banner-item h4::before,
+#banner .banner-item h4::after,
+#banner .banner-item h1::before,
+#banner .banner-item h1::after,
+#banner .banner-item p::before,
+#banner .banner-item p::after
+{
+    display: none;
+}
+
+#banner .banner-item {
+	padding: 220px 0px 100px;
+}
+
+#banner .banner-item h4{
+    font-size: 24px;
+}
+
+#banner .banner-item h1{
+    font-size: 48px;
+}
+
+/* === banner css ends === */
+
+/* === about css starts === */
+#about {
+	padding-top: 50px;
+    padding-bottom: 50px;
+	
+}
+
+#about .about-text p{
+    padding: 5px 0px;
+    text-align: justify ;
+}
+
+
+/* === about css ends === */
+
+/* === gallery css starts === */
+#gallery{
+    padding-bottom:50px ;
+}
+
+#gallery .gallery-bg{
+    padding-top: 30px;
+}
+
+#gallery .gallery-bg .gallery-item {
+	margin-top: 0px;
+	
+}
+/* === gallery css ends === */
+
+
+/* === team css starts === */
+#team{
+    padding-bottom: 40px;
+}
+
+#team .team-item{
+    margin:0px 15px;
+    margin-top: 50px;
+
+}
+/* === team css ends === */
+
+
+/* === counter css starts === */
+#funfact .counter-item{
+    text-align: center !important;
+
+}
+/* === counter css ends === */
+
+
+/* === routine css starts === */
+#routine .nav-tabs .nav-item {
+    width: 50%;
+    margin-bottom: 5px;
+    transform:scale(0.95) ;
+    -webkit-transform:scale(0.95) ;
+    -moz-transform:scale(0.95) ;
+    -ms-transform:scale(0.95) ;
+    -o-transform:scale(0.95) ;
+}
+
+#routine .nav-tabs .nav-item .nav-link{
+    line-height: 30px;
+}
+
+#routine .tab-content ul li{
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* === routine css ends === */
+
+
+
+
+      
+  }
+
+  /* <<<---=================== 
+       small devices
+  =====================--->>> */
+
+
+   /* <<<---=================== 
+       medium devices
+  =====================--->>> */ 
+  @media (min-width:768px) and (max-width:991.98px) {
+      /* === navbar css starts === */
+
+
+
+.navbar .navbar-brand{
+        position: static !important;
+}
+
+
+.navbar .navbar-toggler{
+    background: #ffffff;
+ 
+}
+
+.navbar .navbar-toggler span{
+    color:#353535;
+}
+
+.navbar .navbar-nav{
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.navbar .navbar-nav .nav-link{
+    text-align: center;
+    color: #353535 !important;
+}
+
+
+/* === navbar css ends === */
+
+/* === banner css starts === */
+#banner .banner-item h4::before,
+#banner .banner-item h4::after,
+#banner .banner-item h1::before,
+#banner .banner-item h1::after,
+#banner .banner-item p::before,
+#banner .banner-item p::after
+{
+    display: none;
+}
+
+#banner .banner-item {
+	padding: 220px 0px 100px;
+}
+
+#banner .banner-item h4{
+    font-size: 24px;
+}
+
+#banner .banner-item h1{
+    font-size: 48px;
+}
+
+/* === banner css ends === */
+
+/* === about css starts === */
+#about {
+	padding-top: 50px;
+    padding-bottom: 50px;
+	
+}
+
+#about .about-text p{
+    padding: 5px 0px;
+    text-align: justify ;
+}
+
+
+/* === about css ends === */
+
+/* === team css starts === */
+#team{
+    padding-bottom: 40px;
+}
+
+#team .team-item{
+    margin:0px 15px;
+    margin-top: 50px;
+
+}
+/* === team css ends === */
+
+
+  }
+  
+  
+  /* <<<---=================== 
+       medium devices
+  =====================--->>> */

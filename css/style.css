@@ -1106,7 +1106,7 @@ footer::after{
     height: 1px;
     background: #fff;
     position: absolute;
-    bottom: 54px;
+    bottom: 48px;
     left: 0;
 
 }
@@ -1224,13 +1224,20 @@ footer .footer-item .footer-social{
     font-size: 16px;
     transition:all ease-in-out 0.4s;
     margin-right: 6px;
+   
 }
 
 footer .footer-item .footer-social:hover{
     background: var(--brandcol);
     border: 1px solid var(--brandcol);
+    transform: rotate(360deg);
+    
    
 }
+
+
+
+
 
 footer .footer-text p{
     line-height: 53px;
