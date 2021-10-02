@@ -53,6 +53,14 @@ $(function () {
   });
 
 // color settings
+
+$('.color-setting').click(function(){
+
+  $('.color-tray').toggleClass("visible");
+  
+});
+
+
 $(".one").click(function(){
 
   $("body").get(0).style.setProperty('--brandcol', '#e23e34');
