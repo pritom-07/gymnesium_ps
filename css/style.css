@@ -7,6 +7,8 @@
     --title:#555555;
     --teambg:#dddddd;
     --bg:#f1f1f1;
+    --overlay:rgba(226, 62, 56, 0.5);
+    --overlay1:#55a5d3e1;
 }
 
 html{
@@ -114,8 +116,7 @@ img{
     left: 0 !important;
     position: fixed;
     background:var(--hcol);
-    padding-top: .5rem !important;
-    padding-bottom: .5rem !important;
+    padding: 0 !important;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
  }
@@ -211,14 +212,89 @@ img{
     transition-delay: 0.2s;
 }
 
- .navbar .navbar-nav .nav-item:last-child .nav-link{
-     padding-right: 0;
- }
+
+
+
+
+/* ==== modal button css start ======== */
+.navbar .navbar-nav .nav-item:last-child .nav-link::before{
+    background: none;
+}
+.navbar .navbar-nav .nav-item:last-child .nav-link::after{
+    background: none;
+}
+
+.navbar .navbar-nav .nav-item:last-child .nav-link .active{
+    color:#fff !important;
+}
+
+
+.navbar .navbar-nav .nav-item:last-child .nav-link:hover{
+    color:rgb(189, 188, 188) !important;
+    
+}
+
+.navbar .navbar-nav .nav-item .sign-up{
+    font-family: var(--hfont);
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0px 10px ;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    background: var(--brandcol);
+    color:#fff !important;
+    
+    
+    
+} 
+
+/* ====== modal button css end ======== */
+
+/* ====== modal form css start ======== */
+.modal{
+    z-index: 999999999;
+    background:rgba(53, 53, 53, 0.637);
+}
+
+.modal-title{
+    font-family: var(--hfont);
+    font-weight: 700;
+    font-size: 30px;
+   
+}
+
+.form-label, .form-check-label{
+    font-family: var(--hfont);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.form-control{
+    outline: none !important;
+    border: none !important;
+    border-bottom: 1px solid var(--hcol) !important;
+    transition: all linear 0.6s;
+    -webkit-transition: all linear 0.6s;
+    -moz-transition: all linear 0.6s;
+    -ms-transition: all linear 0.6s;
+    -o-transition: all linear 0.6s;
+}
+
+.form-control:hover{
+    background: var(--pcol) !important;
+}
+
+
+
+/* ====== modal form css end ======== */
 
 
  /* =======================
     nav css ends
  ========================== */
+
 #banner .banner-item{
     position: relative;
     z-index: 1;
@@ -552,7 +628,7 @@ img{
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(226, 62, 56, 0.5);
+    background: var(--overlay);
     border: 5px solid rgba(255, 255, 255, 0.5);
     transform: scale(0.96,0.00);
     opacity:0 ;
@@ -610,7 +686,7 @@ img{
     height: 0%;
     top: 0;
     right: 0;
-    background: rgba(226, 62, 56, 0.5);
+    background: var(--overlay);
     border: 5px solid rgba(255, 255, 255, 0.5);
     transform: scale(0);
     opacity: 0;
@@ -1257,6 +1333,139 @@ footer .footer-text p a{
  /* =======================
     footer  css ends
  ========================== */
+
+
+.six i{
+    cursor: pointer;
+    line-height: 40px;
+    color:var(--teambg);
+    font-size: 30px;
+    
+
+}
+
+
+
+.color-setting{
+    width: 40px;
+    height: 40px;
+    background:var(--hcol);
+    position: fixed;
+    left: 1%;
+    bottom: 50%;
+    z-index: 99999;
+    text-align: center;
+}
+
+.color-setting i{
+    cursor: pointer;
+    line-height: 40px;
+    color:var(--teambg);
+    font-size: 30px;
+    animation: round linear infinite;
+    -webkit-animation: round linear 2s infinite;
+}
+
+
+
+@keyframes round {
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+
+100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+    
+}
+
+.color-tray{
+    width: 250px;
+    height: 50px;
+    background: var(--teambg);
+    position: fixed;
+    left: 1%;
+    bottom: 41%;
+    z-index: 99999;
+
+}
+
+.color-tray ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+
+.color-tray ul li{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.color-tray ul .one{
+background: #e23e38;
+  
+}
+
+.color-tray ul .two{
+background:#404DC7 ;
+}
+.color-tray ul .three{
+    background: linear-gradient(to right top, #55f0da, #00d2f2, #00adfc, #597fe6, #9c46aa);
+   
+}
+.color-tray ul  .four{
+    background:#e234f1 ;
+}
+
+.color-tray ul  .five{
+    background:#92c41e ;
+    background:rgba(146, 196, 30, 0.5) ;
+}
+
+
+.six{
+    text-align: center;
+    
+}
+.six i{
+    cursor: pointer;
+    line-height: 40px;
+    color:var(--hfont);
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.dark{
+    background: rgb(53, 53, 53);
+}
+
+
+
+
+
+
+/* =======================
+    color theme  css ends
+ ========================== */
+
+
+
+
+
 
 
 /* =======================

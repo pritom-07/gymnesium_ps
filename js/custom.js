@@ -10,6 +10,7 @@ $(function () {
 
     removecls.removeClass('active');
     $(this).addClass('active');
+    $(".sign-up").removeClass('active');
   });
 
 
@@ -50,6 +51,57 @@ $(function () {
 
 
   });
+
+// color settings
+$(".one").click(function(){
+
+  $("body").get(0).style.setProperty('--brandcol', '#e23e34');
+  $("body").get(0).style.setProperty('--overlay', 'rgba(226, 62, 56, 0.5)');
+  $("body").get(0).style.setProperty('--hcol', '#353535');
+});
+
+
+
+$(".two").click(function(){
+
+  $("body").get(0).style.setProperty('--brandcol', '#404DC7');
+  $("body").get(0).style.setProperty('--overlay', 'rgba(64, 78, 199, 0.5)');
+  $("body").get(0).style.setProperty('--hcol', '#404DC7');
+  
+});
+
+$(".three").click(function(){
+
+  $("body").get(0).style.setProperty('--brandcol', 'linear-gradient(to right top, #55f0da, #00d2f2, #9c46aa)');
+  $("body").get(0).style.setProperty('--overlay', 'linear-gradient(to right top, #55f0d980, #00d2f280, #9d46aa80)');
+  $("body").get(0).style.setProperty('--hcol', 'linear-gradient(to right top, #55f0da, #9c46aa');
+});
+
+$(".four").click(function(){
+
+  $("body").get(0).style.setProperty('--brandcol', '#e234f1');
+  $("body").get(0).style.setProperty('--overlay', 'rgba(225, 52, 241, 0.5)');
+  $("body").get(0).style.setProperty('--hcol', '#e234f1');
+});
+
+$(".five").click(function(){
+
+  $("body").get(0).style.setProperty('--brandcol', '#92c41e');
+  $("body").get(0).style.setProperty('--overlay', 'rgba(146, 196, 30, 0.5)');
+  $("body").get(0).style.setProperty('--hcol', '#92c41e');
+  
+});
+
+$(".six").click(function(){
+
+  $('body').toggleClass("dark");
+  $("body").get(0).style.setProperty('--hcol', '#55a5d3e1');
+ 
+ 
+});
+
+
+
 
 
 

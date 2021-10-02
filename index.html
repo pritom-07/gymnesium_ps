@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body >
 
   <!-- preloader starts -->
   <div class="preloader">
@@ -88,6 +88,9 @@
           <li class="nav-item">
             <a class="nav-link text-uppercase text-white" href="#contact">contact</a>
           </li>
+          <li class="nav-item">
+            <a class="btn  nav-link sign-up text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal">sign up</a>
+          </li>
 
 
         </ul>
@@ -96,7 +99,64 @@
     </div>
   </nav>
 
-  <!-- navbar ends -->
+
+<!-- Modal  start-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-capitalize " id="exampleModalLabel">sign up form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    <form action="">
+      <div class="modal-body">
+       <div class="row">
+         <div class="col-lg-4">
+           <div class="sign-up-img">
+              <img src="images/sign-up-logo.jpg" alt="sign-up-logo" class="img-fluid w-100">
+           </div>
+         </div>
+         <div class="col-lg-8">
+          <div class="mb-3">
+            <label  class="form-label">First name</label>
+            <input type="text" class="form-control" id="#" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">last name</label>
+            <input type="text" class="form-control" id="#" aria-describedby="emailHelp">
+           
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="#">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          
+         </div>
+       </div>
+      </div>
+      <div class="modal-footer">
+        <button type="cancel" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal  end-->
+
+
+<!-- navbar ends -->
 
 
   <!-- banner stars -->
@@ -1285,7 +1345,24 @@
 
 
 
+<!-- color theme start -->
 
+<div class="color-setting">
+  <i class="fas fa-cog"></i>
+</div>
+
+<div class="color-tray">
+  <ul class="p-0 g-0 mb-0">
+    <li class="one"></li>
+    <li class="two"></li>
+    <li class="three"></li>
+    <li class="four"></li>
+    <li class="five"></li>
+    <li class="six"> <i class="fas fa-moon"></i></li>
+  </ul>
+</div>
+
+<!-- color theme  end-->
 
 
 
@@ -1311,7 +1388,8 @@
   <script src="js/aos.js"></script>
   <script>
     AOS.init({
-      duration: 2000,
+      duration: 1500,
+      easing: 'ease',
     });
   </script>
   <!-- slick slider js link -->
